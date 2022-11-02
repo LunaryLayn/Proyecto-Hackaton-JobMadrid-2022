@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<!-- Pagina creada por Hugo Polo Gonzalez para la Hackaton de JobMadrid 2022-->
+
+<head>
+    <title>Reto de Frontend para la Hackathon de JOBMadrid 2022</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4 menuClass">
+                <div class="mapOptions">
+                    <h2 id="title"></h2>
+                    <p id="descText">¿Estas deseando tomar un descanso? <br> Esta pagina te permitira
+                        buscar de forma rapida los <span class="sub">MEJORES</span> restaurantes, parques y bares cerca
+                        de cualquier ubicacion para que puedas descansar o trabajar fuera
+                        de casa.
+                        Ademas, tambien podras buscar otros lugares de tu interes. ¡Incluso ver como llegar hasta ellos
+                        desde cualquier lugar!
+                    </p>
+                    <input type="text" class="searchBar" id="autocomplete"
+                        placeholder="&#x1F50D; ¿Donde estas?"></input>
+                    <hr>
+                    <h5>Destacados:</h5>
+                    <p>Hemos creado algunos marcadores por defecto para lugares que te pueden interesar cercanos a tu
+                        ubicacion... ¡Elige alguno! Recuerda que puedes <span class="sub"> hacer click en cualquiera de los resultados
+                        para ver una ruta de como llegar hasta alli desde tu ubicacion
+                            actual.</span> <br> Ademas, <span class="sub2">¡Si quieres saber como llegar a algun lugar concreto desde tu posicion, puedes utilizar
+                        el buscador de abajo!</span></p>
+                    <button class="btnWhite flr" id="restaurant">&#x1f37d; Restaurantes</button>
+                    <button class="btnWhite flr" id="park">&#x26f2; Parques y lugares al aire libre</button>
+                    <button class="btnBlue flr" id="bar">&#x1f378; Bares</button>
+                    <br><br>
+                    <form>
+                        <div class="form-group">
+                            <label for="formControlRange" id="range_val">Distancia maxima:</label><br>
+                            <input type="range" class="custom-range" min="50" max="1000" step="50" id="range">
+                        </div>
+                    </form>
+
+                    <hr>
+                    <button type="button" class="btnSearch" id="btnSearch">
+                        Buscar
+                    </button> <br>
+                    <div class="routerDiv">
+                        <button type="button" class="btnRoute" id="btnRoute">
+                            ¿Como puedo llegar a...?
+                        </button>
+                        <input type="text" class="searchBar" id="router" placeholder="Destino: &#x1F50D;"></input>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8">
+                <div id="googleMap">
+                </div>
+                <!-- Ventana modal de los mensajes de no encontrado/filtro no aplicado -->
+                <div class="modal fade" id="modalFilter" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title"></h5>
+                            </div>
+                            <div class="modal-body"></div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btnClose" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts JS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlBZmiLaWi7mggqnvHNXOy684IR2Nmcu4&libraries=places"></script>
+    <script src="./JS/map.js"></script>
+    <script src="./JS/app.js"></script>
+</body>
+
+</html>
