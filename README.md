@@ -3,7 +3,7 @@
 
 ### Background y uso:
 
-Este proyecto sirve para poder buscar los mejores restaurantes, bares y parques cerca de tu ubicacion, en un area del tamaño que tu quieras hasta 1 KM.
+Este proyecto web sirve para poder buscar los mejores restaurantes, bares y parques cerca de tu ubicacion, en un area de un tamaño personalizable hasta 1 KM.
 
 Apareceran los 20 resultados mejor valorados en la base de datos de Google Maps al realizar las busquedas debido a que la API no te permite devolver todos los resultados, solo los 20 mejores o los 20 mas cercanos (yo he optado por los mejores). Pueden ser 60 utilizando la paginacion, pero por el tipo de aplicacion y de ejercicio no he visto necesario implementarlo para conseguir una funcionalidad acorde a lo que se busca conseguir con esta web. Tambien debemos de tener en cuenta que el filtrado se hace en base a los tipos asociados en la base de datos de google maps a cada uno de los lugares, y que estos no siempre son 100% acertados. (Aunque para acotar este problema se han incluido algunos filtros extra, como para los parques, que solo saldran especificamente los que esten al aire libre a pesar de que haya lugares con la etiqueta de parque, como por ejemplo los parques recreativos de niños pequeños).
 
