@@ -15,7 +15,7 @@ Se han utilizado HTML, CSS y JS como base para la visualizacion y programacion d
 Tambien se han utilizado algunos frameworks: JQuery para facilitar el uso de JS y BootStrap para la responsividad de la pagina.
 Por ultimo, he utilizado la API de Google Maps para el mapa.
 
-Respecto a la organizacion, al ser un proyecto sencillo, solo he separado la programacion JS en dos partes. Una relacionada unicamente con funcionalidades de google maps y otra con el resto de cosas necesarias para la web
+Respecto a la organizacion, al ser un proyecto sencillo, solo he separado la programacion JS en dos partes. Una relacionada unicamente con funcionalidades de google maps y otra con el resto de cosas necesarias para la web.
 
 ### Contacto:
 E-mail: Hupogo2000@protonmail.com
