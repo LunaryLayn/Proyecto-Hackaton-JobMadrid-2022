@@ -13,7 +13,7 @@ Ademas de esto, se han realizado las tareas extra de agregar responsividad a la 
 
 Se han utilizado HTML, CSS y JS como base para la visualizacion y programacion de la pagina web.
 Tambien se han utilizado algunos frameworks: JQuery para facilitar el uso de JS y BootStrap para la responsividad de la pagina.
-Por ultimo, he utilizado la API de Google Maps para el mapa.
+Por ultimo, he utilizado la API de Google Maps para el mapa. (SE DEBE INSERTAR LA CLAVE API EN EL HTML PARA QUE FUNCIONE)
 
 Respecto a la organizacion, al ser un proyecto sencillo, solo he separado la programacion JS en dos partes. Una relacionada unicamente con funcionalidades de google maps y otra con el resto de cosas necesarias para la web.
 
